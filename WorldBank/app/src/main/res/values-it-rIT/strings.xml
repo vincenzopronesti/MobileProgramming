@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE resources [
+    <!ENTITY appname "World Bank">
+    ]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="search_by_country">Ricerca per paese</string>
+    <string name="search_by_topic">Ricerca per argomento</string>
+    <string name="load_chart">Carica grafico</string>
+    <string name="load_data">Carica dati</string>
+    <string name="country">paese</string>
+    <string name="region">regione</string>
+    <string name="country_hint">Paese</string>
+    <string name="topic_hint">Argomento</string>
+    <string name="indicator_hint">Indicatore</string>
+    <string name="description">Descrizione</string>
+    <string name="close">Chiudi</string>
+    <string name="action_info">Info</string>
+    <string name="research_for_country_help_msg">Ottieni un grafico filtrando per paese, argomento ed infine indicatore</string>
+    <string name="research_for_topic_help_msg">Ottieni un grafico filtrando per argomento, indicatore ed infine paese</string>
+    <string name="load_chart_help_msg">Scegli un\'immagine PNG precedentemente salvata</string>
+    <string name="load_data_help_msg">"Scegli i dati di un grafico precedentemente salvato "</string>
+    <string name="error">Errore</string>
+    <string name="save_png">Salva PNG</string>
+    <string name="save_data">Salva dati</string>
+    <string name="png_saved">Immagine salvata correttamente</string>
+    <string name="png_not_saved">Impossibile salvare l\'immagine</string>
+    <string name="data_saved">Dati salvati correttamente</string>
+    <string name="data_not_saved">Impossibile salvare i dati</string>
+    <string name="error_msg">Impossibile recuperare i contenuti…</string>
+    <string name="data_name">%s-%s</string>
+    <string name="no_data_error_msg">I parametri richiesti non sono disponibili</string>
+    <string name="about_msg">Riconoscimenti:\nWorld Bank per aver fornito i dati (https://www.worldbank.org/)\n\nPhilipp Jahoda (PhilJay) per MPAndroidChart(https://android-arsenal.com/details/1/741)\n\nhjnilsson per le bandiere (https://github.com/hjnilsson/country-flags)\n\nAndroid Studio (un IDE veramente divertente)\n\nSviluppatori:\nLeonardo Izzi\nVincenzo Pronestí\nBeatrice Savoia\nChristian Santapaola</string>
+    <string name="name">Nome:</string>
+    <string name="source">Sorgente:</string>
+    <string name="indicator_src_description"><![CDATA[<b>Descrizione della sorgente:</b><br></br>]]></string>
+    <string name="indicator_org_description"><![CDATA[<br></br><br></br><b>Organizzazione:</b><br></br>]]></string>
+    <string name="nothing_available">Nessun dato trovato</string>
+</resources>

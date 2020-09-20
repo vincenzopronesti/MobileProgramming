@@ -1,0 +1,40 @@
+<!DOCTYPE resources [
+    <!ENTITY appname "World Bank">
+    ]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="search_by_country">Search by country</string>
+    <string name="search_by_topic">Search by topic</string>
+    <string name="load_chart">Load chart</string>
+    <string name="load_data">Load data</string>
+    <string name="isocode">iso</string>
+    <string name="country">country</string>
+    <string name="region">region</string>
+    <string name="country_hint">Country</string>
+    <string name="topic_hint">Topic</string>
+    <string name="indicator_hint">Indicator</string>
+    <string name="description">Description</string>
+    <string name="close">Close</string>
+    <string name="action_info">About &appname;</string>
+    <string name="research_for_country_help_msg">Retrieve a chart filtering by country, topic and then indicator.</string>
+    <string name="research_for_topic_help_msg">Retrieve a chart filtering by topic, indicator and then country.</string>
+    <string name="load_chart_help_msg">Choose a PNG image chart previously saved.</string>
+    <string name="load_data_help_msg">Choose a chart\'s data set previously saved.</string>
+    <string name="error">Error</string>
+    <string name="save_png">Save PNG</string>
+    <string name="save_data">Save data</string>
+    <string name="png_saved">Image saved successfully</string>
+    <string name="png_not_saved">Unable to save the image</string>
+    <string name="data_saved">Data saved successfully</string>
+    <string name="data_not_saved">Unable to save the data</string>
+    <string name="error_msg">Unable to retrieve the content…</string>
+    <string name="no_data_error_msg">The parameters you\'ve requested are not available.</string>
+    <string name="data_name">%s-%s</string>
+    <string name="about_msg">Acknowledgments:\nWorld Bank for the data (https://www.worldbank.org/)\n\nPhilipp Jahoda (PhilJay) for MPAndroidChart(https://android-arsenal.com/details/1/741)\n\nhjnilsson for the countries flags (https://github.com/hjnilsson/country-flags)\n\nAndroid Studio (a really funny IDE)\n\nDevelopers:\nLeonardo Izzi\nVincenzo Pronestí\nBeatrice Savoia\nChristian Santapaola</string>
+    <string name="name">Name:</string>
+    <string name="source">Source:</string>
+    <string name="indicator_src_description"><![CDATA[<b>Source description:</b><br></br>]]></string>
+    <string name="indicator_org_description"><![CDATA[<br></br><br></br><b>Organization:</b><br></br>]]></string>
+    <string name="nothing_available">No data found</string>
+</resources>

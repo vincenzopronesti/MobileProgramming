@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/toolbar_main"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/base1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
+        android:minHeight="139dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/spacebase1-2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/base2x"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/base2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
+        android:minHeight="139dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/centralSpace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spacebase1-2"
+        app:srcCompat="@drawable/base2x"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/base3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
+        android:minHeight="139dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/spacebase3-4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/centralSpace"
+        app:srcCompat="@drawable/base2x"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/base4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
+        android:minHeight="139dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spacebase3-4"
+        app:srcCompat="@drawable/base2x"
+        tools:ignore="ContentDescription" />
+
+    <com.ipss.worldbank.custom_widget.GradientTextView
+        android:id="@+id/searchCountryTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/search_by_country"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/base1"
+        app:layout_constraintStart_toStartOf="@+id/base1"
+        app:layout_constraintTop_toTopOf="@+id/base1" />
+
+    <Button
+        android:id="@+id/helpCountryBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/icona_aiuto2x"
+        app:layout_constraintBottom_toBottomOf="@+id/base1"
+        app:layout_constraintEnd_toEndOf="@+id/base1" />
+
+    <ImageView
+        android:id="@+id/worldIv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="90dp"
+        android:maxWidth="90dp"
+        android:minHeight="80dp"
+        android:minWidth="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/spaceWorldIv"
+        app:layout_constraintEnd_toEndOf="@+id/searchCountryTv"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/searchCountryTv"
+        app:layout_constraintTop_toBottomOf="@+id/searchCountryTv"
+        app:srcCompat="@drawable/icona_geografia2x"
+        tools:ignore="ContentDescription" />
+
+    <Space
+        android:id="@+id/spaceWorldIv"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/base1"
+        app:layout_constraintEnd_toEndOf="@+id/worldIv"
+        app:layout_constraintStart_toStartOf="@+id/worldIv" />
+
+    <Button
+        android:id="@+id/helpTopicBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/icona_aiuto2x"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/base2"
+        app:layout_constraintEnd_toEndOf="@+id/base2" />
+
+    <com.ipss.worldbank.custom_widget.GradientTextView
+        android:id="@+id/searchTopicTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/search_by_topic"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/base2"
+        app:layout_constraintStart_toStartOf="@+id/base2"
+        app:layout_constraintTop_toTopOf="@+id/base2" />
+
+    <ImageView
+        android:id="@+id/topicIv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="90dp"
+        android:maxWidth="90dp"
+        android:minHeight="80dp"
+        android:minWidth="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/spaceTopicIv"
+        app:layout_constraintEnd_toEndOf="@+id/searchTopicTv"
+        app:layout_constraintStart_toStartOf="@+id/searchTopicTv"
+        app:layout_constraintTop_toBottomOf="@+id/searchTopicTv"
+        app:srcCompat="@drawable/icona_libri2x"
+        tools:ignore="ContentDescription" />
+
+    <Space
+        android:id="@+id/spaceTopicIv"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/base2"
+        app:layout_constraintEnd_toEndOf="@+id/topicIv"
+        app:layout_constraintStart_toStartOf="@+id/topicIv" />
+
+    <com.ipss.worldbank.custom_widget.GradientTextView
+        android:id="@+id/chartTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/load_chart"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/base3"
+        app:layout_constraintStart_toStartOf="@+id/base3"
+        app:layout_constraintTop_toTopOf="@+id/base3" />
+
+    <Button
+        android:id="@+id/helpChartBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/icona_aiuto2x"
+        app:layout_constraintBottom_toBottomOf="@+id/base3"
+        app:layout_constraintEnd_toEndOf="@+id/base3" />
+
+    <Space
+        android:id="@+id/spaceChartIv"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/base3"
+        app:layout_constraintEnd_toEndOf="@+id/chartIv"
+        app:layout_constraintStart_toStartOf="@+id/chartIv" />
+
+    <ImageView
+        android:id="@+id/chartIv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="90dp"
+        android:maxWidth="90dp"
+        android:minHeight="80dp"
+        android:minWidth="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/spaceChartIv"
+        app:layout_constraintEnd_toEndOf="@+id/chartTv"
+        app:layout_constraintStart_toStartOf="@+id/chartTv"
+        app:layout_constraintTop_toBottomOf="@+id/chartTv"
+        app:srcCompat="@drawable/icona_grafico_comb2x"
+        tools:ignore="ContentDescription" />
+
+    <com.ipss.worldbank.custom_widget.GradientTextView
+        android:id="@+id/dataTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/load_data"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/base4"
+        app:layout_constraintStart_toStartOf="@+id/base4"
+        app:layout_constraintTop_toTopOf="@+id/base4" />
+
+    <Button
+        android:id="@+id/helpDataBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/icona_aiuto2x"
+        app:layout_constraintBottom_toBottomOf="@+id/base4"
+        app:layout_constraintEnd_toEndOf="@+id/base4" />
+
+    <Space
+        android:id="@+id/spaceDataIv"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/base4"
+        app:layout_constraintEnd_toEndOf="@+id/dataIv"
+        app:layout_constraintStart_toStartOf="@+id/dataIv" />
+
+    <ImageView
+        android:id="@+id/dataIv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="90dp"
+        android:maxWidth="90dp"
+        android:minHeight="80dp"
+        android:minWidth="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/spaceDataIv"
+        app:layout_constraintEnd_toEndOf="@+id/dataTv"
+        app:layout_constraintStart_toStartOf="@+id/dataTv"
+        app:layout_constraintTop_toBottomOf="@+id/dataTv"
+        app:srcCompat="@drawable/icona_database2x"
+        tools:ignore="ContentDescription" />
+
+    <Space
+        android:id="@+id/centralSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/spacebase1-2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/centralSpace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/spacebase3-4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/centralSpace" />
+
+</android.support.constraint.ConstraintLayout>

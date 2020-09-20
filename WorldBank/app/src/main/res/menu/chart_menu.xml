@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ipss.worldbank.chart.mpchart.ShowChartActivity">
+    <item
+        android:id="@+id/action_save_png"
+        android:orderInCategory="100"
+        android:title="@string/save_png"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_save_data"
+        android:orderInCategory="100"
+        android:title="@string/save_data"
+        app:showAsAction="never" />
+</menu>

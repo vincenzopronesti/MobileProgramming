@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="backgroundColor">#D1D8E0</color>
+    <color name="textGradientStart">#6aa5c9</color>
+    <color name="textGradientEnd">#ff000000</color>
+    <color name="textColor">#ff000000</color>
+    <color name="toolbarTextColor">#ffffffff</color>
+    <color name="editTextBackground">#6aa5c9</color>
+    <color name="spinner">#6aa5c9</color>
+    <color name="lucid_black">#88000000</color>
+    <color name="chart_background">#ffffffff</color>
+</resources>

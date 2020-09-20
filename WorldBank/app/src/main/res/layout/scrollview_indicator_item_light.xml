@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/sourceNameTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/base_no_ombra_light2x" />
+
+    <com.ipss.worldbank.custom_widget.HelveticaNeueTextView
+        android:id="@+id/indicatorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/name"
+        android:textAlignment="viewStart"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <Button
+        android:id="@+id/indicatorHelpBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/icona_aiuto2x"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <Space
+        android:id="@+id/darkSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toStartOf="@+id/indicatorHelpBtn"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <com.ipss.worldbank.custom_widget.HelveticaNeueTextView
+        android:id="@+id/indicatorNameTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:singleLine="false"
+        android:text="Text"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/darkSpace"
+        app:layout_constraintStart_toEndOf="@+id/indicatorName"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <com.ipss.worldbank.custom_widget.HelveticaNeueTextView
+        android:id="@+id/sourceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/source"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/indicatorName"
+        app:layout_constraintTop_toBottomOf="@+id/indicatorNameTv" />
+
+    <com.ipss.worldbank.custom_widget.HelveticaNeueTextView
+        android:id="@+id/sourceNameTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Text"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/darkSpace"
+        app:layout_constraintStart_toEndOf="@+id/sourceName"
+        app:layout_constraintTop_toBottomOf="@+id/indicatorNameTv" />
+
+</android.support.constraint.ConstraintLayout>
